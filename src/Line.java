@@ -12,10 +12,6 @@ public class Line extends Shape {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
 	/**
 	 * 
 	 * @param endPoint

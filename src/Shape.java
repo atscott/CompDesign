@@ -14,10 +14,6 @@ public abstract class Shape extends Drawable {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	/**
 	 * 
 	 * @param fillColor

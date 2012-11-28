@@ -12,9 +12,6 @@ public class Ellipse extends Shape {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
 
 	/**
 	 * 

@@ -12,10 +12,6 @@ public class Point {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	public int getX(){
 		return 0;
 	}

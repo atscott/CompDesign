@@ -12,10 +12,6 @@ public class Rectangle extends Shape {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
 	/**
 	 * 
 	 * @param originPoint
