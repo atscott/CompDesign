@@ -1,0 +1,4 @@
+CompDesign
+==========
+
+MSOE Component Design
