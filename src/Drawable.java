@@ -9,10 +9,6 @@ public class Drawable {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	public void draw(){
 
 	}
