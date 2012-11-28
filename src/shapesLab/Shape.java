@@ -21,12 +21,13 @@ public abstract class Shape extends Drawable {
 	 * @param lineColor
 	 * @param originPoint
 	 */
-	public void Shape(int fillColor, int lineColor, Point originPoint){
+	public Shape(int fillColor, int lineColor, Point originPoint){
 
 	}
 
 	protected abstract void calcSize();
 
+	@Override
 	public void draw(){
 
 	}

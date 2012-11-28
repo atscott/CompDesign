@@ -26,14 +26,17 @@ public class Ellipse extends Shape {
 
 	}
 
+	@Override
 	protected void calcSize(){
 
 	}
 
+	@Override
 	public void draw(){
 
 	}
 
+	@Override
 	public double getSize(){
 		return 0;
 	}
