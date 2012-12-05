@@ -11,16 +11,19 @@ import java.util.Observer;
 public class Delta implements Observer, Displayable {
     private GPSCoordinate lastCoordinate;
     private GPSCoordinate currentCoordinate;
+    private Observable subject;
 
-	public Delta() {
+	public Delta(Observable subject) {
+        this.subject = subject;
+        subject.addObserver(this);
 
 	}
 
 	@Override
 	public void display() {
-        System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate));
-        System.out.print("Change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate));
-        System.out.print("Change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate));
+        System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate) + ", ");
+        System.out.print("Change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate) + ", ");
+        System.out.print("Change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate) + "\n");
 	}
 
 	@Override
