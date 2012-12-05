@@ -1,7 +1,6 @@
 package lab2;
 
 import java.util.Observable;
-import java.util.Observer;
 
 /**
  * @author marius
@@ -17,24 +16,7 @@ public class GpsSubject extends Observable {
 	}
 
 	public GPSCoordinate getCoordinates() {
-		return null;
+		return mGPSCoordinate;
 	}
-	
-	public double getAltitude() {
-		return 0.0;
-	}
-	
-	public double getLongitude() {
-		return 0.0;
-	}
-	
-	public double getLatitude() {
-		return 0.0;
-	}
-	
-	public double getDirection() {
-		return 0.0;
-	}
-	
 
 }
