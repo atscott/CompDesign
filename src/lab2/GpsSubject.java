@@ -16,17 +16,25 @@ public class GpsSubject extends Observable {
 
 	}
 
-	/**
-	 * 
-	 * @param o
-	 */
-	@Override
-	public void addObserver(Observer o) {
-
-	}
-
 	public GPSCoordinate getCoordinates() {
 		return null;
 	}
+	
+	public double getAltitude() {
+		return 0.0;
+	}
+	
+	public double getLongitude() {
+		return 0.0;
+	}
+	
+	public double getLatitude() {
+		return 0.0;
+	}
+	
+	public double getDirection() {
+		return 0.0;
+	}
+	
 
 }
