@@ -23,7 +23,7 @@ public class Altimeter implements Observer, Displayable {
 
 	@Override
 	public void update(Observable o, Object arg) {
-
+        //Test to see if this change committed
 	}
 
 }
