@@ -1,7 +1,6 @@
 package lab2;
 
 import java.util.Observable;
-import java.util.Observer;
 
 /**
  * @author marius
@@ -16,17 +15,8 @@ public class GpsSubject extends Observable {
 
 	}
 
-	/**
-	 * 
-	 * @param o
-	 */
-	@Override
-	public void addObserver(Observer o) {
-
-	}
-
 	public GPSCoordinate getCoordinates() {
-		return null;
+		return mGPSCoordinate;
 	}
 
 }

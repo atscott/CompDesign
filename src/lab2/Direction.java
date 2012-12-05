@@ -8,9 +8,9 @@ import java.util.Observer;
  * @version 1.0
  * @created 05-Dec-2012 9:54:32 AM
  */
-public class Other implements Observer, Displayable {
+public class Direction implements Observer, Displayable {
 
-	public Other() {
+	public Direction() {
 
 	}
 
