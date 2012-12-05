@@ -18,9 +18,9 @@ public class Delta implements Observer, Displayable {
 
 	@Override
 	public void display() {
-        System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate));
-        System.out.print("Change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate));
-        System.out.print("Change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate));
+        System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate) + ", ");
+        System.out.print("Change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate) + ", ");
+        System.out.print("Change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate) + "\n");
 	}
 
 	@Override
