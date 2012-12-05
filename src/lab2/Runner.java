@@ -1,16 +1,12 @@
 package lab2;
 
-public class Runner{
-	private GpsSubject mGpsSubject;
-	public GpsSubject m_GpsSubject;
-
-
+public class Runner {
 
 	/**
 	 * 
 	 * @param args
 	 */
-	public static void main(String[] args){
-
+	public static void main(String[] args) {
+		new GpsSubject();
 	}
 }
