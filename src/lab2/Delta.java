@@ -11,8 +11,11 @@ import java.util.Observer;
 public class Delta implements Observer, Displayable {
     private GPSCoordinate lastCoordinate;
     private GPSCoordinate currentCoordinate;
+    private Observable subject;
 
-	public Delta() {
+	public Delta(Observable subject) {
+        this.subject = subject;
+        subject.addObserver(this);
 
 	}
 
