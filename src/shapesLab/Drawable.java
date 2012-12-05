@@ -1,3 +1,4 @@
+package shapesLab;
 /**
  * @author moorea
  * @version 1.0
@@ -6,10 +7,6 @@
 public class Drawable {
 
 	public Drawable(){
-
-	}
-
-	public void finalize() throws Throwable {
 
 	}
 

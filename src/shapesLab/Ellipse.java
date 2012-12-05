@@ -1,3 +1,4 @@
+package shapesLab;
 /**
  * @author moorea
  * @version 1.0
@@ -12,9 +13,6 @@ public class Ellipse extends Shape {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
 
 	/**
 	 * 
@@ -28,14 +26,17 @@ public class Ellipse extends Shape {
 
 	}
 
+	@Override
 	protected void calcSize(){
 
 	}
 
+	@Override
 	public void draw(){
 
 	}
 
+	@Override
 	public double getSize(){
 		return 0;
 	}

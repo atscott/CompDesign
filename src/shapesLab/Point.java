@@ -1,3 +1,4 @@
+package shapesLab;
 /**
  * @author moorea
  * @version 1.0
@@ -9,10 +10,6 @@ public class Point {
 	private int yLoc;
 
 	public Point(){
-
-	}
-
-	public void finalize() throws Throwable {
 
 	}
 

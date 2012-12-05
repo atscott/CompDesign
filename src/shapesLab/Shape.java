@@ -1,3 +1,4 @@
+package shapesLab;
 /**
  * @author moorea
  * @version 1.0
@@ -14,22 +15,19 @@ public abstract class Shape extends Drawable {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	/**
 	 * 
 	 * @param fillColor
 	 * @param lineColor
 	 * @param originPoint
 	 */
-	public void Shape(int fillColor, int lineColor, Point originPoint){
+	public Shape(int fillColor, int lineColor, Point originPoint){
 
 	}
 
 	protected abstract void calcSize();
 
+	@Override
 	public void draw(){
 
 	}

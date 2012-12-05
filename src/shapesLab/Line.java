@@ -1,3 +1,4 @@
+package shapesLab;
 /**
  * @author moorea
  * @version 1.0
@@ -12,10 +13,6 @@ public class Line extends Shape {
 
 	}
 
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
 	/**
 	 * 
 	 * @param endPoint
@@ -26,14 +23,17 @@ public class Line extends Shape {
 
 	}
 
+	@Override
 	protected void calcSize(){
 
 	}
 
+	@Override
 	public void draw(){
 
 	}
 
+	@Override
 	public double getSize(){
 		return 0;
 	}
