@@ -9,8 +9,13 @@ import java.util.Observer;
  * @created 05-Dec-2012 9:54:32 AM
  */
 public class Delta implements Observer, Displayable {
+    private GPSCoordinate lastCoordinate;
+    private GPSCoordinate currentCoordinate;
+    private Observable subject;
 
-	public Delta() {
+	public Delta(Observable subject) {
+        this.subject = subject;
+        subject.addObserver(this);
 
 	}
 
@@ -21,6 +26,7 @@ public class Delta implements Observer, Displayable {
 
 	@Override
 	public void update(Observable o, Object arg) {
+		// TODO Auto-generated method stub
 
 	}
 
