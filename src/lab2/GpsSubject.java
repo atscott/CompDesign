@@ -15,6 +15,15 @@ public class GpsSubject extends Observable {
 
 	}
 
+    public void setCoordinates(GPSCoordinate newCoordinate){
+        //TODO: set new coordinate. Optionally call coordinatesChanged if you want to setChanged() and notifyObservers()
+        // if new coordinates meet certain criteria. Or always call coordinatesChanged.
+    }
+
+    public void coordinatesChanged(){
+        //TODO: call setChanged() and notifyObservers()
+    }
+
 	public GPSCoordinate getCoordinates() {
 		return mGPSCoordinate;
 	}
