@@ -11,18 +11,15 @@ public class GpsSubject extends Observable {
 
 	private GPSCoordinate mGPSCoordinate;
 
-	public GpsSubject() {
-
+	public void setCoordinates(GPSCoordinate newCoordinate) {
+		mGPSCoordinate = newCoordinate;
+		coordinatesChanged();
 	}
 
-    public void setCoordinates(GPSCoordinate newCoordinate){
-        //TODO: set new coordinate. Optionally call coordinatesChanged if you want to setChanged() and notifyObservers()
-        // if new coordinates meet certain criteria. Or always call coordinatesChanged.
-    }
-
-    public void coordinatesChanged(){
-        //TODO: call setChanged() and notifyObservers()
-    }
+	public void coordinatesChanged() {
+		setChanged();
+		notifyObservers(mGPSCoordinate);
+	}
 
 	public GPSCoordinate getCoordinates() {
 		return mGPSCoordinate;
