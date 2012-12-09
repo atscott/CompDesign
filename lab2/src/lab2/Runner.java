@@ -46,7 +46,7 @@ public class Runner {
         StringBuilder sb = new StringBuilder();
 
         try {
-            BufferedReader br= Files.newBufferedReader(Paths.get("../GpsData.txt"), Charset.defaultCharset());
+            BufferedReader br= Files.newBufferedReader(Paths.get("lab2/GpsData.txt"), Charset.defaultCharset());
 
             String line;
             while((line = br.readLine()) != null){
