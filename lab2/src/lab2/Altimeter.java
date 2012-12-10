@@ -4,25 +4,26 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * @author marius
+ * @author moorea
  * @version 1.0
  * @created 05-Dec-2012 9:54:32 AM
  */
 public class Altimeter implements Observer, Displayable {
 
-	public Altimeter() {
+    private int currentAltitude;
 
+	public Altimeter() {
+        currentAltitude = 0;
 	}
 
 	@Override
 	public void display() {
-
+         System.out.println("Current Altitude: " + currentAltitude);
 	}
 
 	@Override
 	public void update(Observable o, Object arg) {
-		// TODO Auto-generated method stub
-
+        //Test to see if this change committed
 	}
 
 }
