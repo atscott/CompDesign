@@ -16,15 +16,16 @@ public class Delta implements Observer, Displayable {
 	public Delta(Observable subject) {
         this.subject = subject;
         subject.addObserver(this);
-
 	}
 
 	@Override
 	public void display() {
-        System.out.println("==Delta display==");
-        System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate) + ", ");
-        System.out.print("change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate) + ", ");
-        System.out.print("change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate) + "\n");
+        if(lastCoordinate != null){
+            System.out.println("==Delta display==");
+            System.out.print("Change in X: " + currentCoordinate.getDeltaX(lastCoordinate) + ", ");
+            System.out.print("change in Y: " + currentCoordinate.getDeltaZ(lastCoordinate) + ", ");
+            System.out.print("change in Z: " + currentCoordinate.getDeltaZ(lastCoordinate) + "\n");
+        }
 	}
 
 	@Override

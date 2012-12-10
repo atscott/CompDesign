@@ -14,7 +14,9 @@ public class Runner {
 	 */
 	public static void main(String[] args) {
 		GpsSubject subject  = new GpsSubject();
-
+        Delta delta = new Delta(subject);
+        //TODO: Add new Altimeter and Direction
+        // need to modify the constructors in those classes to accept a Subject
 
         for(GPSCoordinate coordinate : loadGPSFile()){
             subject.setCoordinates(coordinate);
