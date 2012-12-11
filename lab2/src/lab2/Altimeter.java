@@ -19,8 +19,8 @@ public class Altimeter implements Observer, Displayable {
 
     @Override
     public void display() {
-        System.out.println("==Altimeter Display==");
-        System.out.println("Current Altitude: " + currentCoordinate.getElevation());
+        System.out.println("==Altimeter display==");
+        System.out.println("Altitude: " + currentCoordinate.getElevation());
     }
 
     @Override

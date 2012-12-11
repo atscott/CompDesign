@@ -1,3 +1,4 @@
+
 package lab2;
 
 import java.util.Observable;
@@ -11,28 +12,29 @@ import java.util.Observer;
 public class Direction implements Observer, Displayable {
     GpsSubject subject;
 
-	public Direction(Observable o) {
-        subject = (GpsSubject)o;
+    public Direction(Observable o) {
+        subject = (GpsSubject) o;
         subject.addObserver(this);
-	}
+    }
 
-	@Override
-	public void display() {
-        if(subject != null){
-            System.out.println("********DIRECTION*********");
-            System.out.println("Latitude:  " + subject.getCoordinates().getLatitude());
-            System.out.println("Longitude: " + subject.getCoordinates().getLongitude());
-            System.out.println("Elevation: " + subject.getCoordinates().getElevation());
+    @Override
+    public void display() {
+        if (subject != null) {
+            System.out.println("==Location display==");
+            System.out.print("Latitude: " + subject.getCoordinates().getLatitude() + ", ");
+            System.out.print("Longitude: " + subject.getCoordinates().getLongitude() + "\n");
+            // System.out.print("Elevation: " +
+            // subject.getCoordinates().getElevation() + "\n");
         }
-	}
+    }
 
-	@Override
-	public void update(Observable o, Object arg) {
+    @Override
+    public void update(Observable o, Object arg) {
 
-       if(o != null) {
-           subject = (GpsSubject) o;
-       }
-       display();
-	}
+        if (o != null) {
+            subject = (GpsSubject) o;
+        }
+        display();
+    }
 
 }
