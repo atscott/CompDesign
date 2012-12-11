@@ -19,6 +19,7 @@ public class Direction implements Observer, Displayable {
 	@Override
 	public void display() {
         if(subject != null){
+            System.out.println("********DIRECTION*********");
             System.out.println("Latitude:  " + subject.getCoordinates().getLatitude());
             System.out.println("Longitude: " + subject.getCoordinates().getLongitude());
             System.out.println("Elevation: " + subject.getCoordinates().getElevation());
