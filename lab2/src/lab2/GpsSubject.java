@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package lab2;
+//package lab2;
 
 import java.util.Observable;
 
