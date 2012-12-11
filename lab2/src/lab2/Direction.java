@@ -13,6 +13,7 @@ public class Direction implements Observer, Displayable {
 
 	public Direction(Observable o) {
         subject = (GpsSubject)o;
+        subject.addObserver(this);
 	}
 
 	@Override
