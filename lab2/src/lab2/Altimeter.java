@@ -14,20 +14,20 @@ public class Altimeter implements Observer, Displayable {
     private GPSCoordinate  currentCoordinate;
     private Observable subject;
 
-	public Altimeter() {
+	public Altimeter(Observable subject) {
 	 this.subject = subject;
-	 subject.addObserver(subject);
+	 subject.addObserver(this);
 	}
 
 	@Override
 	public void display() {
-	 System.out.println((==Altimeter Display==);	
+	 System.out.println("==Altimeter Display==");	
          System.out.println("Current Altitude: " + currentCoordinate.getElevation());
 	}
 
 	@Override
 	public void update(Observable o, Object arg) {
-         if(o instanceOf GpsSubject){
+         if(o instanceof GpsSubject){
          	GpsSubject subject = (GpsSubject) o;
          	lastCoordinate = currentCoordinate;
          	currentCoordinate = subject.getCoordinates();
