@@ -5,7 +5,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * @author marius
+ * @author scotta
  * @version 1.0
  * @created 05-Dec-2012 9:54:32 AM
  */

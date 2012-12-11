@@ -7,6 +7,10 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
+/**
+ * @author scotta, volkhartm
+ * @version 1.0
+ */
 public class Runner {
 
     /**
