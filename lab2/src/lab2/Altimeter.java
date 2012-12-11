@@ -1,3 +1,4 @@
+
 package lab2;
 
 import java.util.Observable;
@@ -10,29 +11,25 @@ import java.util.Observer;
  */
 public class Altimeter implements Observer, Displayable {
 
-    private GPSCoordinate lastCoordinate;
-    private GPSCoordinate  currentCoordinate;
-    private Observable subject;
+    private GPSCoordinate currentCoordinate;
 
-	public Altimeter(Observable subject) {
-	 this.subject = subject;
-	 subject.addObserver(this);
-	}
+    public Altimeter(Observable subject) {
+        subject.addObserver(this);
+    }
 
-	@Override
-	public void display() {
-	 System.out.println("==Altimeter Display==");	
-         System.out.println("Current Altitude: " + currentCoordinate.getElevation());
-	}
+    @Override
+    public void display() {
+        System.out.println("==Altimeter Display==");
+        System.out.println("Current Altitude: " + currentCoordinate.getElevation());
+    }
 
-	@Override
-	public void update(Observable o, Object arg) {
-         if(o instanceof GpsSubject){
-         	GpsSubject subject = (GpsSubject) o;
-         	lastCoordinate = currentCoordinate;
-         	currentCoordinate = subject.getCoordinates();
-         	display();
-          }
-	}
+    @Override
+    public void update(Observable o, Object arg) {
+        if (o instanceof GpsSubject) {
+            GpsSubject subject = (GpsSubject) o;
+            currentCoordinate = subject.getCoordinates();
+            display();
+        }
+    }
 
 }
