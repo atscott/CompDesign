@@ -1,0 +1,58 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Lab9', 'Implementation-Version': 1
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:14.0-rc2'
+    compile 'com.squareup:dagger:0.9.1'
+    compile 'com.squareup:dagger-compiler:0.9.1'
+    testCompile 'org.testng:testng:6.8'
+}
+
+test {
+    systemProperties 'property': 'value'
+    useTestNG() {
+    	suites 'testng.xml'
+    }
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'lab9/src'
+			srcDir 'lab2/src'
+		}
+		resources {
+			srcDir 'resources'
+		}
+	}
+	test {
+		java {
+			srcDir 'srcTest'
+		}
+		resources {
+			srcDir 'resourcesTest'
+		}
+	}
+}

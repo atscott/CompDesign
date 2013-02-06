@@ -1,4 +1,5 @@
 *.class
+bin/
 
 # Package Files #
 *.war
@@ -7,3 +8,18 @@
 # Eclipse stuff #
 .classpath
 .settings/
+
+# Cool people have a Mac and we dont want these files #
+.DS_Store
+
+#intellij#
+*.iml
+.idea/*
+
+# Even cooler people use build systems and we don't want to share with uncool people
+.gradle/
+build/
+
+#TestNG
+test-output/
+output.log
